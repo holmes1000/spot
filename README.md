@@ -21,6 +21,13 @@ The ORB-SLAM repository provides sample data from EuRoC MH_05 however, to view o
 
 Once this dataset is downloaded, you can copy it into your ORB-SLAM3 workspace
 
+Open two terminals, sourcing the install/setup.bash, then run 
+
+ros2 run ros2_orb_slam3 mono_node_cpp --ros-args -p node_name_arg:=mono_slam_cpp
+
+ros2 run ros2_orb_slam3 mono_driver_node.py --ros-args -p settings_name:=EuRoC -p image_seq:=euroc_MH01
+
+
 # Estimates vs Ground Truth Analysis
 
 # Data Collection on Spot
